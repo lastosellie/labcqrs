@@ -65,7 +65,7 @@ services:
       - ./delivery:/usr/src
       - ./maven-repo:/root/.m2
       
-  BoundedContext443:
+  customercenter:
     depends_on: 
       - kafka
     image: adoptopenjdk/maven-openjdk11:latest
@@ -76,6 +76,6 @@ services:
       - 8085:8085
     working_dir: /usr/src
     volumes:
-      - ./BoundedContext443:/usr/src
+      - ./customercenter:/usr/src
       - ./maven-repo:/root/.m2
       

@@ -123,22 +123,22 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: BoundedContext443
+  name: customercenter
   labels:
-    app: BoundedContext443
+    app: customercenter
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: BoundedContext443
+      app: customercenter
   template:
     metadata:
       labels:
-        app: BoundedContext443
+        app: customercenter
     spec:
       containers:
-        - name: BoundedContext443
-          image: username/BoundedContext443:latest
+        - name: customercenter
+          image: username/customercenter:latest
           ports:
             - containerPort: 8080
           readinessProbe:
@@ -216,13 +216,13 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: BoundedContext443
+  name: customercenter
   labels:
-    app: BoundedContext443
+    app: customercenter
 spec:
   ports:
     - port: 8080
       targetPort: 8080
   selector:
-    app: BoundedContext443
+    app: customercenter
 

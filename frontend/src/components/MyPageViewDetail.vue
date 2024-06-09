@@ -10,7 +10,13 @@
                 <Number label="OrderId" v-model="item.orderId" :editMode="editMode" @change="change" />
             </div>
             <div>
-                <Number label="DeliveryStaus" v-model="item.deliveryStaus" :editMode="editMode" @change="change" />
+                <String label="ProductId" v-model="item.productId" :editMode="editMode" @change="change" />
+            </div>
+            <div>
+                <String label="DeliveryStatus" v-model="item.deliveryStatus" :editMode="editMode" @change="change" />
+            </div>
+            <div>
+                <String label="OrderStatus" v-model="item.orderStatus" :editMode="editMode" @change="change" />
             </div>
         </v-card-text>
     </v-card>

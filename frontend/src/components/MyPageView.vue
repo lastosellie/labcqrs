@@ -23,7 +23,9 @@
             headers: [
                 { text: "id", value: "id" },
                 { text: "orderId", value: "orderId" },
-                { text: "deliveryStaus", value: "deliveryStaus" },
+                { text: "productId", value: "productId" },
+                { text: "deliveryStatus", value: "deliveryStatus" },
+                { text: "orderStatus", value: "orderStatus" },
             ],
             myPage : [],
         }),
