@@ -1,7 +1,7 @@
 # 
 
 ## Model
-www.msaez.io/#/courses/cna-full/228f1240-15aa-11ef-85a7-4dd87a89e9b6/dp-cqrs-2022
+www.msaez.io/#/storming/labcqrs_ellie
 
 ## Before Running Services
 ### Make sure there is a Kafka server running
@@ -23,7 +23,7 @@ See the README.md files inside the each microservices directory:
 - order
 - inventory
 - delivery
-- customercenter
+- BoundedContext443
 
 
 ## Run API Gateway (Spring Gateway)
@@ -45,7 +45,7 @@ mvn spring-boot:run
 ```
  http :8088/deliveries id="id" address="address" customerId="customerId" quantity="quantity" orderId="orderId" 
 ```
-- customercenter
+- BoundedContext443
 ```
 ```
 
